@@ -1,0 +1,22 @@
+MINIMAL_BOUNTY_AMOUNT: 10000
+
+BOUTNY_LIST_EMPTY: "&7There is no &cbounties &7at the moment."
+BOUNTY_LIST_HEADER: "&c&m    &8&m                                                      &c&m    "
+BOUNTY_LIST_FORMAT: " &c* &6<target> &7- Bounty: &c<amount>"
+BOUNTY_LIST_FOOTER: "&c&m    &8&m                                                      &c&m    "
+
+FOR_PLAYERS_ONLY: "&cSorry! &7This command is for players only."
+INVALID_NUMBER: "&7Please use a valid &cnumber&7!"
+PLAYER_NOT_ONLINE: "&7Player &c<player> &7is currently not online!"
+MINIMAL_AMOUNT_REQUIRED: "&7Minimal bounty amount is &c<amount>&7!"
+NOT_ENOUGH_MONEY: "&7You do not have enough &cmoney&7!"
+BOUNTY_NOT_SET_YET: "&7You have not set bounty on &c<target> &7yet!"
+BOUNTY_ADDED: "&7You have added bounty of &c<amount> &7to &c<target>&7."
+BOUNTY_REMOVED: "&7You have removed bounty from &c<target>&7."
+DEATH_MESSAGE: "&7You have received &c<target>'s &7bounty of &c<amount>&7."
+BOUNTY_COMMAND_USAGE:
+- "&c&m    &8&m                                                      &c&m    "
+- " &7&l* &c/&7bounty add &c<&7target&c> <&7amount&c>"
+- " &7&l* &c/&7bounty remove &c<&7target&c>"
+- " &7&l* &c/&7bounty list"
+- "&c&m    &8&m                                                      &c&m    "

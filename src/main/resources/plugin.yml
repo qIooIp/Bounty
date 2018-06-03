@@ -1,0 +1,8 @@
+name: Bounty
+version: 1.0
+main: me.qiooip.bounty.Bounty
+author: qIooIp
+
+commands:
+  bounty:
+    description: Main bounty command.
