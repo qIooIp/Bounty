@@ -25,7 +25,7 @@ public class Language {
     public Language() {
         ConfigFile config = Bounty.getInstance().getConfig();
 
-        BOUNTY_LIST_EMPTY = config.getString("BOUTNY_LIST_EMPTY");
+        BOUNTY_LIST_EMPTY = config.getString("BOUNTY_LIST_EMPTY");
         BOUNTY_LIST_HEADER = config.getString("BOUNTY_LIST_HEADER");
         BOUNTY_LIST_FORMAT = config.getString("BOUNTY_LIST_FORMAT");
         BOUNTY_LIST_FOOTER = config.getString("BOUNTY_LIST_FOOTER");
