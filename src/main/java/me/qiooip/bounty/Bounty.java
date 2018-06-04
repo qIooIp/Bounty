@@ -16,8 +16,8 @@ public class Bounty extends JavaPlugin {
 
     @Getter private static Bounty instance;
 
-    @Getter private ConfigFile config;
-    @Getter private BountyManager bountyManager;
+    private ConfigFile config;
+    private BountyManager bountyManager;
 
     @Override
     public void onEnable() {

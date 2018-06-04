@@ -6,11 +6,12 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
 
+@Getter
 public class BountyData {
 
-    @Getter private UUID target;
-    @Getter private String targetName;
-    @Getter private Map<UUID, Integer> appliers;
+    private UUID target;
+    private String targetName;
+    private Map<UUID, Integer> appliers;
 
     public BountyData(UUID target, String targetName, UUID applier, Integer amount) {
         this.target = target;
