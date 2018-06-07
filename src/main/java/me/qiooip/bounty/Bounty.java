@@ -22,7 +22,7 @@ public class Bounty extends JavaPlugin {
     @Override
     public void onEnable() {
         if(!Vault.setupEconomy()) {
-            getLogger().severe("Bounty - Disabled due to no Vault dependency found!");
+            getLogger().severe("Bounty - Disabled due to no Economy dependency found!");
             Bukkit.getPluginManager().disablePlugin(this);
             return;
         }
@@ -42,6 +42,6 @@ public class Bounty extends JavaPlugin {
 
     @Override
     public void onDisable() {
-        this.bountyManager.onDisable();
+        if(this.isEnabled()) this.bountyManager.onDisable();
     }
 }
