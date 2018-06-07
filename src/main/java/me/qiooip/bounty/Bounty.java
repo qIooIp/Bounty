@@ -24,6 +24,7 @@ public class Bounty extends JavaPlugin {
         if(!Vault.setupEconomy()) {
             getLogger().severe("Bounty - Disabled due to no Vault dependency found!");
             Bukkit.getPluginManager().disablePlugin(this);
+            return;
         }
 
         instance = this;
