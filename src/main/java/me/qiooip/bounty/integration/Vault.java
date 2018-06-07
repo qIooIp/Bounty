@@ -1,5 +1,6 @@
 package me.qiooip.bounty.integration;
 
+import lombok.Getter;
 import net.milkbowl.vault.economy.Economy;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
@@ -7,7 +8,7 @@ import org.bukkit.plugin.RegisteredServiceProvider;
 
 public class Vault {
 
-    private static Economy econ;
+    @Getter private static Economy econ;
 
     public static boolean setupEconomy() {
         if(Bukkit.getPluginManager().getPlugin("Vault") == null) return false;

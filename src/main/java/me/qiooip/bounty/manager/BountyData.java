@@ -13,20 +13,20 @@ public class BountyData {
     private String targetName;
     private Map<UUID, Integer> appliers;
 
-    public BountyData(UUID target, String targetName, UUID applier, Integer amount) {
+    BountyData(UUID target, String targetName, UUID applier, Integer amount) {
         this.target = target;
         this.targetName = targetName;
         this.appliers = new HashMap<>();
         this.appliers.put(applier, amount);
     }
 
-    public BountyData(UUID target, String targetName, Map<UUID, Integer> appliers) {
+    BountyData(UUID target, String targetName, Map<UUID, Integer> appliers) {
         this.target = target;
         this.targetName = targetName;
         this.appliers = appliers;
     }
 
-    public boolean containsApplier(UUID applier) {
+    boolean containsApplier(UUID applier) {
         return this.appliers.containsKey(applier);
     }
 
@@ -34,12 +34,12 @@ public class BountyData {
         return this.appliers.values().stream().reduce(0, Integer::sum);
     }
 
-    public void addApplier(UUID applier, Integer amount) {
+    void addApplier(UUID applier, Integer amount) {
         this.appliers.putIfAbsent(applier, 0);
         this.appliers.put(applier, this.appliers.get(applier) + amount);
     }
 
-    public int removeApplier(UUID appliers) {
+    int removeApplier(UUID appliers) {
         return this.appliers.remove(appliers);
     }
 }

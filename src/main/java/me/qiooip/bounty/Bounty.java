@@ -42,6 +42,6 @@ public class Bounty extends JavaPlugin {
 
     @Override
     public void onDisable() {
-        if(this.isEnabled()) this.bountyManager.onDisable();
+        if(Vault.getEcon() != null) this.bountyManager.onDisable();
     }
 }
