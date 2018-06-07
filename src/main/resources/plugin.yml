@@ -2,6 +2,7 @@ name: Bounty
 version: 1.0
 main: me.qiooip.bounty.Bounty
 author: qIooIp
+softdepend: [Vault]
 
 commands:
   bounty:
